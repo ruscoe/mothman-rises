@@ -1,3 +1,5 @@
+![mothman_rises_banner](https://github.com/user-attachments/assets/48d0af5a-a2df-4a40-a916-8be7a2d57c1f)
+
 # Mothman Rises
 
 A game about Mothman.
