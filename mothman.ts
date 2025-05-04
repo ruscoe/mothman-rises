@@ -28,6 +28,10 @@ function update() {
   if (keys["ArrowLeft"]) mothX -= speed;
   if (keys["ArrowRight"]) mothX += speed;
 
+  // Keep Mothman within canvas bounds.
+  mothX = Math.max(0, Math.min(canvas.width - 128, mothX));
+  mothY = Math.max(0, Math.min(canvas.height - 128, mothY));
+
   // Scroll background.
   roadY += 2;
   if (roadY >= canvas.height) {
