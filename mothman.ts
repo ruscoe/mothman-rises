@@ -5,14 +5,14 @@ const ctx = canvas.getContext("2d")!;
 
 const roadImg = new Image();
 roadImg.src = "img/road.png";
-roadImg.onload = RunIfImagesLoaded;
+roadImg.onload = runIfImagesLoaded;
 
 const carImagePaths = ["/img/car01.png", "/img/car02.png", "/img/car03.png"];
 const carImages: HTMLImageElement[] = [];
 
 const mothmanImg = new Image();
 mothmanImg.src = "img/mothman.png";
-mothmanImg.onload = RunIfImagesLoaded;
+mothmanImg.onload = runIfImagesLoaded;
 
 // Count total images to track loading.
 const totalImages = 2 + carImagePaths.length;
@@ -36,7 +36,7 @@ let imagesLoaded = 0;
 for (const path of carImagePaths) {
   const img = new Image();
   img.src = path;
-  img.onload = RunIfImagesLoaded;
+  img.onload = runIfImagesLoaded;
   carImages.push(img);
 }
 
@@ -108,7 +108,7 @@ function gameLoop() {
   requestAnimationFrame(gameLoop);
 }
 
-function RunIfImagesLoaded() {
+function runIfImagesLoaded() {
   imagesLoaded++;
   if (imagesLoaded === totalImages) {
     gameLoop();
