@@ -6,7 +6,7 @@ A game about Mothman.
 
 ## Live Demo
 
-[Play a live demo](https://ruscoe.org/mothman/)
+[Play a live demo](https://ruscoe.org/mothman/) (requires a keyboard)
 
 ## Requirements
 
