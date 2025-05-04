@@ -20,7 +20,11 @@ Compile the JavaScript.
 
 `tsc`
 
-Open `index.html` in your brower of choice.
+Run the server.
+
+`npx serve .`
+
+Open the URL you're given in your browser of choice.
 
 ## Credit
 
