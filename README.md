@@ -1,4 +1,4 @@
-![mothman_rises_banner](https://github.com/user-attachments/assets/48d0af5a-a2df-4a40-a916-8be7a2d57c1f)
+![mothman_rises_banner](https://github.com/user-attachments/assets/e25d6e72-ffe9-44be-a07d-4653a89a8429)
 
 # Mothman Rises
 
