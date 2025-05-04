@@ -79,6 +79,11 @@ function update() {
     if (cars[i].isOffScreen()) {
       cars.splice(i, 1);
     }
+    // Check for collision with Mothman.
+    if (detectCollision(cars[i]) && !cars[i].isVeering) {
+      // Mothman has collided with and spooked the car.
+      cars[i].veer();
+    }
   }
 }
 
@@ -108,4 +113,13 @@ function RunIfImagesLoaded() {
   if (imagesLoaded === totalImages) {
     gameLoop();
   }
+}
+
+function detectCollision(car: Car): boolean {
+  return (
+    car.x < mothX + 128 &&
+    car.x + car.width > mothX &&
+    car.y < mothY + 128 &&
+    car.y + car.height > mothY
+  );
 }
