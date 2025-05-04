@@ -7,7 +7,7 @@ const roadImg = new Image();
 roadImg.src = "img/road.png";
 roadImg.onload = runIfImagesLoaded;
 
-const carImagePaths = ["/img/car01.png", "/img/car02.png", "/img/car03.png"];
+const carImagePaths = ["img/car01.png", "img/car02.png", "img/car03.png"];
 const carImages: HTMLImageElement[] = [];
 
 const mothmanImg = new Image();
