@@ -6,24 +6,43 @@
   <title>Mothman Rises</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A silly little game by Dan Ruscoe - ruscoe.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     html,
     body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
       height: 100%;
       margin: 0;
       overflow: hidden;
-      background-color: #000;
+      text-align: center;
+    }
+
+    a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     canvas {
-      display: block;
-      margin: 0 auto;
       background: black;
+      display: block;
+      margin: 2rem auto;
     }
   </style>
 </head>
 
 <body>
+  <h1>Mothman Rises</h1>
+  <p>A silly little game by <a href="https://ruscoe.org" target="_blank">Dan Ruscoe</a></p>
+  <p style="font-weight: bold">Use your arrow keys to help Mothman spook the drivers!</p>
   <canvas id="mothCanvas" width="800" height="600"></canvas>
   <script type="module" src="dist/mothman.js"></script>
 </body>
